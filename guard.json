@@ -1,0 +1,37 @@
+{
+  "global_daily_cap_cents": 250000,
+  "default_account_daily_cap_cents": 20000,
+  "account_daily_caps": {
+    "act_7100000002": 12000,
+    "act_7100002009": 10000
+  },
+  "min_daily_budget_cents": 500,
+  "max_budget_change_pct": 30,
+  "naming": {
+    "campaign_pattern": "^[A-Z]{2,5}_(LEADS|TRAFFIC|SALES|AWARENESS|ENGAGEMENT)_[a-z0-9]+(-[a-z0-9]+)*_\\d{6}$",
+    "business_codes": {
+      "Northside Dental": "NSD",
+      "Coastal Moving Co": "CMC",
+      "Peak Fitness Studios": "PFS"
+    }
+  },
+  "creative": {
+    "headline_max": 40,
+    "body_max": 125,
+    "require_https_url": true,
+    "allowed_domains": [],
+    "product_extensions_enroll_status": "OPT_OUT"
+  },
+  "targeting": {
+    "device_expansion": 0
+  },
+  "approver": {
+    "min_length": 3,
+    "blocked_names": ["claude", "assistant", "ai", "bot", "agent", "user", "me", "admin", "test"]
+  },
+  "pacing": {
+    "over_ratio": 1.25,
+    "under_ratio": 0.6,
+    "min_expected_cents": 500
+  }
+}

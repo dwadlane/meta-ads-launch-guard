@@ -1,0 +1,35 @@
+{
+  "name": "meta-ads-launch-guard",
+  "version": "0.1.0",
+  "description": "An MCP server that lets Claude plan and launch Meta ad campaigns across many ad accounts, with spend caps, paused-first launches and a human approval before anything goes live.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "start": "node dist/index.js",
+    "demo": "tsx examples/demo.ts",
+    "demo:save": "tsx examples/demo.ts > examples/demo-output.md",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "keywords": ["mcp", "mcp-server", "meta-ads", "marketing-api", "facebook-ads", "claude", "guardrails", "model-context-protocol"],
+  "author": "Gaps2Gains",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.11",
+    "tsx": "^4.20.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.2"
+  },
+  "bin": {
+    "meta-ads-launch-guard": "dist/index.js"
+  },
+  "files": ["dist", "guard.json"],
+  "engines": {
+    "node": ">=20"
+  }
+}
